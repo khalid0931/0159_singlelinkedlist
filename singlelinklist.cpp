@@ -152,3 +152,23 @@ int main()
             if (mhs.delNode(nim) == false)
                 cout << "\nData tidak ditemukan" << endl;
             else
+                {
+            cout << "\nData dengan nomor mahasiswa " << nim << " berhasil dihapus\n";
+        }
+        break;
+
+    case '3':
+        mhs.traverse();
+        break;
+
+    case '4':
+    {
+        if (mhs.listEmpty())
+        {
+            cout << "\nList Kosong\n";
+            break;
+        }
+
+        Node *previous, *current;
+        cout << "\nMasukkan no mahasiswa yang dicari : ";
+        cin >> nim;
