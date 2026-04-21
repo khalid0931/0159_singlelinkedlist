@@ -145,3 +145,10 @@ int main()
                 cout << "\nList Kosong" << endl;
                 break;
             }
+
+            cout << "\nMasukan no mahasiswa yang akan dihapus : ";
+            cin >> nim;
+
+            if (mhs.delNode(nim) == false)
+                cout << "\nData tidak ditemukan" << endl;
+            else
